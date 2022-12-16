@@ -13,7 +13,7 @@ const TeamCard = ({
     <div className="flex sm:flex-row flex-col sm:gap-20 gap-5 my-20 z-100 items-center justify-center w-[20rem] md:w-[50rem] text-left">
       <img
         src={
-          img
+          img !== ''
             ? img
             : 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp'
         }

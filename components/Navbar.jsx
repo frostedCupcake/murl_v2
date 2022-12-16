@@ -9,10 +9,10 @@ import styles from '../styles';
 import { navVariants } from '../utils/motion';
 
 const Navbar = () => {
-  let hiddenClass = 'hidden w-full md:block md:w-auto';
-  let normalClass = 'w-full md:block md:w-auto';
+  const hiddenClass = 'hidden w-full md:block md:w-auto';
+  const normalClass = 'w-full md:block md:w-auto';
   const pathname = usePathname();
-  let [hidden, setHidden] = useState(true);
+  const [hidden, setHidden] = useState(true);
 
   const activeClass =
     'block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all';
