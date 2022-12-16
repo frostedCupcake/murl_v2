@@ -14,10 +14,6 @@ const Navbar = () => {
   const pathname = usePathname();
   const [hidden, setHidden] = useState(true);
 
-  const activeClass =
-    'block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all';
-  const notActiveClass =
-    'block font-bold py-2 pr-4 pl-3 text-white rounded hover:text-[#9803fc] md:hover:bg-transparent md:border-0 md:hover:text-[#9803fc] md:p-0  transition-all';
   return (
     <motion.nav
       variants={navVariants}
@@ -66,7 +62,11 @@ const Navbar = () => {
             <li>
               <Link
                 href="/"
-                className={pathname === '/' ? activeClass : notActiveClass}
+                className={
+                  pathname === '/'
+                    ? 'block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all'
+                    : 'block font-bold py-2 pr-4 pl-3 text-white rounded hover:text-[#9803fc] md:hover:bg-transparent md:border-0 md:hover:text-[#9803fc] md:p-0  transition-all'
+                }
                 aria-current="page"
                 onClick={() => {
                   setHidden((prev) => !prev);
@@ -78,7 +78,11 @@ const Navbar = () => {
             <li>
               <Link
                 href="/team/"
-                className={pathname === '/team' ? activeClass : notActiveClass}
+                className={
+                  pathname === '/team'
+                    ? 'block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all'
+                    : 'block font-bold py-2 pr-4 pl-3 text-white rounded hover:text-[#9803fc] md:hover:bg-transparent md:border-0 md:hover:text-[#9803fc] md:p-0  transition-all'
+                }
                 onClick={() => {
                   setHidden((prev) => !prev);
                 }}
@@ -90,7 +94,9 @@ const Navbar = () => {
               <Link
                 href="/research/"
                 className={
-                  pathname === '/research' ? activeClass : notActiveClass
+                  pathname === '/research'
+                    ? 'block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all'
+                    : 'block font-bold py-2 pr-4 pl-3 text-white rounded hover:text-[#9803fc] md:hover:bg-transparent md:border-0 md:hover:text-[#9803fc] md:p-0  transition-all'
                 }
                 onClick={() => {
                   setHidden((prev) => !prev);
@@ -103,7 +109,9 @@ const Navbar = () => {
               <Link
                 href="/publications"
                 className={
-                  pathname === '/publications' ? activeClass : notActiveClass
+                  pathname === '/publications'
+                    ? 'block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all'
+                    : 'block font-bold py-2 pr-4 pl-3 text-white rounded hover:text-[#9803fc] md:hover:bg-transparent md:border-0 md:hover:text-[#9803fc] md:p-0  transition-all'
                 }
                 onClick={() => {
                   setHidden((prev) => !prev);
@@ -116,7 +124,9 @@ const Navbar = () => {
               <Link
                 href="/contact"
                 className={
-                  pathname === '/contact' ? activeClass : notActiveClass
+                  pathname === '/contact'
+                    ? 'block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all'
+                    : 'block font-bold py-2 pr-4 pl-3 text-white rounded hover:text-[#9803fc] md:hover:bg-transparent md:border-0 md:hover:text-[#9803fc] md:p-0  transition-all'
                 }
                 onClick={() => {
                   setHidden((prev) => !prev);
