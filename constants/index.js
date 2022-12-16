@@ -44,21 +44,21 @@ export const teamData = [
     email: 'aeranki [at] bme.iith.ac.in',
   },
   {
-    img: '',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp',
     name: 'Meenu Agrawal, Ph.D.',
     currentDesignation: ['Ph.D. in Mechanical Engineering', 'IIT Hyderabad'],
     prevDesignation: ['M.Tech in Mechanical Engineering', 'IIT Hyderabad'],
     email: 'ms.meenuagrawal [at] gmail.com',
   },
   {
-    img: '',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp',
     name: 'Mr. Vigneshwaran G',
     currentDesignation: ['M.Sc in Medical Genetics', 'University of Madras'],
     prevDesignation: ['B.Sc in Biotechnology', 'VISTAS, Vels University'],
     email: 'm21resch01007 [at] iith.ac.in ',
   },
   {
-    img: '',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp',
     name: 'Mr. Aniket Sabale',
     currentDesignation: [
       'M.Tech in Mechatronics Engineering',
