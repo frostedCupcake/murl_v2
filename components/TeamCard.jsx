@@ -17,30 +17,25 @@ const TeamCard = ({
             ? img
             : "https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp"
         }
-        alt={name ? name : "teamPerson"}
+        alt={name}
         className="object-cover w-60 rounded-md shadow-lg"
       />
       <div className="flex flex-col gap-3">
         <h3 className={teamClass}>
-          <span className="font-bold">{name ? name : "Name"}</span>
+          <span className="font-bold">{name}</span>
         </h3>
         <h4 className={teamClass}>
-          {currentDesignation[0] ? currentDesignation[0] : "Desigation current"}
+          {currentDesignation[0]}
           {", "}
-          <span className="font-bold">
-            {currentDesignation[1] ? currentDesignation[1] : "location"}
-          </span>
+          <span className="font-bold">{currentDesignation[1]}</span>
         </h4>
         <h4 className={teamClass}>
-          {prevDesignation[0] ? prevDesignation[0] : "Desigation prev"}
+          {prevDesignation[0]}
           {", "}
-          <span className="font-bold">
-            {prevDesignation[1] ? prevDesignation[1] : "Desigation location"}
-          </span>
+          <span className="font-bold">{prevDesignation[1]}</span>
         </h4>
         <h4 className={teamClass}>
-          <span className="font-bold">Email Id: </span>{" "}
-          {email ? email : "Email id:"}
+          <span className="font-bold">Email Id: </span> {email}
         </h4>
       </div>
     </div>

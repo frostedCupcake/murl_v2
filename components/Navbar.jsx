@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import { usePathname, useRouter } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { motion } from "framer-motion";
 import Link from "next/link";
 
@@ -9,16 +9,15 @@ import styles from "../styles";
 import { navVariants } from "../utils/motion";
 
 const Navbar = () => {
-  let hidden_class = "hidden w-full md:block md:w-auto";
-  let normal_class = " w-full md:block md:w-auto";
+  let hiddenClass = "hidden w-full md:block md:w-auto";
+  let normalClass = "w-full md:block md:w-auto";
   const pathname = usePathname();
   let [hidden, setHidden] = useState(true);
 
-  const active_class =
+  const activeClass =
     "block font-bold py-2 pr-4 pl-3 text-white bg-[#9803fc] rounded md:bg-transparent  md:text-[#9803fc] md:p-0  transition-all";
-  const not_active_class =
+  const notActiveClass =
     "block font-bold py-2 pr-4 pl-3 text-white rounded hover:text-[#9803fc] md:hover:bg-transparent md:border-0 md:hover:text-[#9803fc] md:p-0  transition-all";
-  console.log(pathname);
   return (
     <motion.nav
       variants={navVariants}
@@ -58,19 +57,16 @@ const Navbar = () => {
               fillRule="evenodd"
               d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
               clipRule="evenodd"
-            ></path>
+            />
           </svg>
         </button>
 
-        <div
-          className={hidden ? hidden_class : normal_class}
-          id="navbar-default"
-        >
+        <div className={hidden ? hiddenClass : normalClass} id="navbar-default">
           <ul className="flex flex-col p-4 mt-4 bg-red rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-murl-black uppercase transition-all">
             <li>
               <Link
                 href="/"
-                className={pathname == "/" ? active_class : not_active_class}
+                className={pathname === "/" ? activeClass : notActiveClass}
                 aria-current="page"
                 onClick={() => {
                   setHidden((prev) => !prev);
@@ -82,9 +78,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/team/"
-                className={
-                  pathname == "/team" ? active_class : not_active_class
-                }
+                className={pathname === "/team" ? activeClass : notActiveClass}
                 onClick={() => {
                   setHidden((prev) => !prev);
                 }}
@@ -96,7 +90,7 @@ const Navbar = () => {
               <Link
                 href="/research/"
                 className={
-                  pathname == "/research" ? active_class : not_active_class
+                  pathname === "/research" ? activeClass : notActiveClass
                 }
                 onClick={() => {
                   setHidden((prev) => !prev);
@@ -109,7 +103,7 @@ const Navbar = () => {
               <Link
                 href="/publications"
                 className={
-                  pathname == "/publications" ? active_class : not_active_class
+                  pathname === "/publications" ? activeClass : notActiveClass
                 }
                 onClick={() => {
                   setHidden((prev) => !prev);
@@ -122,7 +116,7 @@ const Navbar = () => {
               <Link
                 href="/contact"
                 className={
-                  pathname == "/contact" ? active_class : not_active_class
+                  pathname === "/contact" ? activeClass : notActiveClass
                 }
                 onClick={() => {
                   setHidden((prev) => !prev);
