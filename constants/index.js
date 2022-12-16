@@ -12,7 +12,7 @@ export const colaboratorsData = [
     heading: 'philips',
   },
   {
-    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671096651/ecell/MURL/images_2_cs2cur.png',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671183203/ecell/MURL/Screenshot_from_2022-12-16_15-03-07_m9phpq.png',
     heading: 'uih',
   },
   {
@@ -44,21 +44,21 @@ export const teamData = [
     email: 'aeranki [at] bme.iith.ac.in',
   },
   {
-    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115722/ecell/MURL/meenu_b4v0jk.webp',
     name: 'Meenu Agrawal, Ph.D.',
     currentDesignation: ['Ph.D. in Mechanical Engineering', 'IIT Hyderabad'],
     prevDesignation: ['M.Tech in Mechanical Engineering', 'IIT Hyderabad'],
     email: 'ms.meenuagrawal [at] gmail.com',
   },
   {
-    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671182752/ecell/MURL/Screenshot_from_2022-12-16_14-54-49_jwfhyz.png',
     name: 'Mr. Vigneshwaran G',
     currentDesignation: ['M.Sc in Medical Genetics', 'University of Madras'],
     prevDesignation: ['B.Sc in Biotechnology', 'VISTAS, Vels University'],
     email: 'm21resch01007 [at] iith.ac.in ',
   },
   {
-    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671182752/ecell/MURL/Screenshot_from_2022-12-16_14-55-08_ol0gga.png',
     name: 'Mr. Aniket Sabale',
     currentDesignation: [
       'M.Tech in Mechatronics Engineering',
@@ -129,17 +129,17 @@ export const publicationData = [
 
 export const researchData = [
   {
-    img: '',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671182752/ecell/MURL/Screenshot_from_2022-12-16_14-54-02_razfxl.png',
     name: 'Therapeutic/Focused Ultrasound (FUS/HIFU)',
     disc: 'FUS/HIFU used in combination with Immunotherapy for Immune Activation, Smart Drug Delivery, Liquid Biopsy for Cancer Therapy.',
   },
   {
-    img: '',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671182752/ecell/MURL/Screenshot_from_2022-12-16_14-54-12_bqtnui.png',
     name: 'Diagnostic Ultrasound for Maternal/Fetal Applications',
     disc: 'Develop novel Shearwave & Echotexture based techniques for improved diagnosis of maternal/fetal disorders.',
   },
   {
-    img: '',
+    img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671182752/ecell/MURL/Screenshot_from_2022-12-16_14-54-35_jngpin.png',
     name: 'Diagnostic Ultrasound for MSK Applications',
     disc: 'Quantify MSK kinematics and dynamics in combination with 3D motion tracking, EMG, and NIRS for understanding MSK disorders.',
   },

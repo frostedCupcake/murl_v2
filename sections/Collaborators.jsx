@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../styles";
-import React from "react";
-import { fadeIn, staggerContainer, textVariant } from "../utils/motion";
-import { colaboratorsData } from "../constants";
+import styles from '../styles';
+import React from 'react';
+import { fadeIn, staggerContainer, textVariant } from '../utils/motion';
+import { colaboratorsData } from '../constants';
 
 const Collaborators = () => {
   return (
@@ -20,21 +20,23 @@ const Collaborators = () => {
       >
         <motion.h1
           variants={textVariant(1.1)}
-          className="font-normal xl:text-[80px] sm:text-[45px] text-[35px]  uppercase text-white tracking-wide mb-[2rem]"
+          className="font-thin lg:text-[60px] xl:text-[80px] sm:text-[45px] text-[35px]  uppercase text-white tracking-wide mb-[3rem]"
         >
           Collaborators
         </motion.h1>
         <motion.div
-          className="grid grid-cols-2 md:grid-cols-3 gap-10"
-          variants={fadeIn("up", "tween", 0.2, 1)}
+          className="grid grid-cols-2 md:grid-cols-3 gap-10 lg:gap-[3.5rem]"
+          variants={fadeIn('up', 'tween', 0.2, 1)}
         >
           {colaboratorsData.map((item) => (
-            <img
-              key={item.heading}
-              src={item.img}
-              alt={item.heading}
-              className="object-cover w-40"
-            />
+            <div className="lg:w-[12rem w-40 rounded-md hover:scale-[1.05] transition-all ">
+              <img
+                key={item.heading}
+                src={item.img}
+                alt={item.heading}
+                className="object-cover rounded-md"
+              />
+            </div>
           ))}
         </motion.div>
       </motion.div>

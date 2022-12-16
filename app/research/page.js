@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../../styles";
-import React from "react";
-import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
-import { researchData } from "../../constants";
+import styles from '../../styles';
+import React from 'react';
+import { fadeIn, staggerContainer, textVariant } from '../../utils/motion';
+import { researchData } from '../../constants';
 
 const page = () => {
   return (
@@ -24,17 +24,17 @@ const page = () => {
         >
           RESEARCH
         </motion.h1>
-        <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
+        <motion.div variants={fadeIn('up', 'tween', 0.2, 1)}>
           {researchData.map((item) => (
             <div className="flex lg:flex-row flex-col lg:gap-10 gap-5 my-10 md:w-[30rem] w-[20rem] lg:w-[60rem] items-center justify-center lg:items-start mx-auto lg:mb-[1rem] mb-[2rem] ">
               <img
                 src={
-                  item.img === ""
-                    ? "https://res.cloudinary.com/dbmw0xoar/image/upload/v1671083250/ecell/MURL/microscope-bacteria-microorganisms-microbes-wallpaper-preview_io0xsp.jpg"
+                  item.img === ''
+                    ? 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671083250/ecell/MURL/microscope-bacteria-microorganisms-microbes-wallpaper-preview_io0xsp.jpg'
                     : item.img
                 }
                 alt={item.name}
-                className=" w-80"
+                className=" w-80 rounded-sm shadow-lg"
               />
               <div className="flex flex-col gap-5 text-center lg:text-left">
                 <h3 className="text-white font-bold text-sm pt-1 md:text-xl ">
