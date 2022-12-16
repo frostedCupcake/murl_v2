@@ -1,5 +1,5 @@
-import React from "react";
-import { AiOutlineBook } from "react-icons/ai";
+import React from 'react';
+import { AiOutlineBook } from 'react-icons/ai';
 
 const PublicationCard = ({ name, disc, date }) => (
   <div className="flex flex-col md:items-start items-center justify-center mx-auto">

@@ -1,7 +1,7 @@
-import Navbar from "./Navbar";
-import { TypingText, TitleText } from "./CustomTexts";
-import Footer from "./Footer";
-import TeamCard from "./TeamCard";
-import PublicationCard from "./PublicationCard";
+import Navbar from './Navbar';
+import { TypingText, TitleText } from './CustomTexts';
+import Footer from './Footer';
+import TeamCard from './TeamCard';
+import PublicationCard from './PublicationCard';
 
 export { Navbar, TitleText, TypingText, Footer, TeamCard, PublicationCard };

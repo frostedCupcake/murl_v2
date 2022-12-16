@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 const TeamCard = ({
   img,
@@ -8,14 +8,14 @@ const TeamCard = ({
   email,
 }) => {
   const teamClass =
-    "font-thin xl:text-[20px] md:text-[18px] sm:text-[13px]  text-[10px] tracking-wide  text-white";
+    'font-thin xl:text-[20px] md:text-[18px] sm:text-[13px]  text-[10px] tracking-wide  text-white';
   return (
     <div className="flex sm:flex-row flex-col sm:gap-20 gap-5 my-20 z-100 items-center justify-center w-[20rem] md:w-[50rem] text-left">
       <img
         src={
           img
             ? img
-            : "https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp"
+            : 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671115867/ecell/MURL/blank-profile-picture-973460_960_720_s4mecc.webp'
         }
         alt={name}
         className="object-cover w-60 rounded-md shadow-lg"
@@ -26,12 +26,12 @@ const TeamCard = ({
         </h3>
         <h4 className={teamClass}>
           {currentDesignation[0]}
-          {", "}
+          {', '}
           <span className="font-bold">{currentDesignation[1]}</span>
         </h4>
         <h4 className={teamClass}>
           {prevDesignation[0]}
-          {", "}
+          {', '}
           <span className="font-bold">{prevDesignation[1]}</span>
         </h4>
         <h4 className={teamClass}>
