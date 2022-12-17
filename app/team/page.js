@@ -11,7 +11,7 @@ import { teamData } from '../../constants';
 const page = () => {
   return (
     <section className={`${styles.paddings} relative z-10 `}>
-      <div className="md:gradient-02 z-0" />
+      <div className="md:block hidden gradient-02 z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"

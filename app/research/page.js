@@ -10,7 +10,7 @@ import { researchData } from '../../constants';
 const page = () => {
   return (
     <section className={`${styles.paddings} relative z-10 `}>
-      <div className="gradient-02 z-0" />
+      <div className="md:block hidden gradient-02 z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -20,7 +20,7 @@ const page = () => {
       >
         <motion.h1
           variants={textVariant(1.1)}
-          className="font-normal xl:text-[80px] sm:text-[35px] text-[30px]  uppercase text-white tracking-wide mb-[2rem]"
+          className="font-normal xl:text-[80px] text-[35px]  uppercase text-white tracking-wide mb-[2rem]"
         >
           RESEARCH
         </motion.h1>
