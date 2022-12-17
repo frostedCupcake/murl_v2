@@ -10,7 +10,7 @@ import { colaboratorsData } from '../constants';
 const Collaborators = () => {
   return (
     <section className={`${styles.paddings} relative z-10`}>
-      <div className="gradient-02 z-0" />
+      <div className="md:gradient-02 z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -20,7 +20,7 @@ const Collaborators = () => {
       >
         <motion.h1
           variants={textVariant(1.1)}
-          className="font-thin lg:text-[60px] xl:text-[80px] sm:text-[45px] text-[35px]  uppercase text-white tracking-wide mb-[3rem]"
+          className="font-normal lg:text-[60px] xl:text-[80px] sm:text-[45px] text-[40px]  uppercase text-white tracking-wide mb-[3rem]"
         >
           Collaborators
         </motion.h1>
