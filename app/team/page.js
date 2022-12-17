@@ -1,17 +1,17 @@
-"use client";
+'use client';
 
-import { motion } from "framer-motion";
+import { motion } from 'framer-motion';
 
-import styles from "../../styles";
-import React from "react";
-import { fadeIn, staggerContainer, textVariant } from "../../utils/motion";
-import { TeamCard } from "../../components";
-import { teamData } from "../../constants";
+import styles from '../../styles';
+import React from 'react';
+import { fadeIn, staggerContainer, textVariant } from '../../utils/motion';
+import { TeamCard } from '../../components';
+import { teamData } from '../../constants';
 
 const page = () => {
   return (
     <section className={`${styles.paddings} relative z-10 `}>
-      <div className="gradient-02 z-0" />
+      <div className="md:gradient-02 z-0" />
       <motion.div
         variants={staggerContainer}
         initial="hidden"
@@ -20,14 +20,14 @@ const page = () => {
         className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col my-2`}
       >
         <motion.h1
-          variants={textVariant(1.1)}
+          variants={textVariant(0.5)}
           className="font-normal xl:text-[80px] sm:text-[40px] text-[30px]  uppercase text-white tracking-wide mb-[2rem]"
         >
           MURL TEAM
         </motion.h1>
-        <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
+        <motion.div variants={fadeIn('up', 'tween', 0.2, 1)}>
           <motion.h1
-            variants={textVariant(1.2)}
+            variants={textVariant(0.6)}
             className="font-thin xl:text-[40px] sm:text-[30px] text-[20px]  uppercase text-white tracking-widest mb-[2rem] text-center"
           >
             Principal Investigator
@@ -41,7 +41,7 @@ const page = () => {
           />
         </motion.div>
 
-        <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
+        <motion.div variants={fadeIn('up', 'tween', 0.2, 1)}>
           <motion.h1
             variants={textVariant(1.2)}
             className="font-thin xl:text-[40px] sm:text-[30px] text-[20px]  uppercase text-white tracking-widest mb-[2rem] text-center"
@@ -56,7 +56,7 @@ const page = () => {
             email={teamData[1].email}
           />
         </motion.div>
-        <motion.div variants={fadeIn("up", "tween", 0.2, 1)}>
+        <motion.div variants={fadeIn('up', 'tween', 0.2, 1)}>
           <motion.h1
             variants={textVariant(1.2)}
             className="font-thin xl:text-[40px] sm:text-[30px] text-[20px]  uppercase text-white tracking-widest mb-[2rem] text-center"

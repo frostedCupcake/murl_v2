@@ -18,6 +18,8 @@ const styles = {
     'font-medium  xl:text-[100px] md:text-[60px] sm:text-[40px] text-[30px]  uppercase text-white tracking-wide lg:-mb-[1rem] mb-[.5rem]',
   heroSText:
     'font-thin  xl:text-[45px] md:text-[35px] sm:text-[30px] text-[20px]  uppercase text-white block tracking-[.3em]',
+  teamDisc:
+    'font-thin xl:text-[20px] md:text-[18px] sm:text-[15px]  text-[13px] tracking-wide  text-white',
 };
 
 export default styles;
