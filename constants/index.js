@@ -55,7 +55,7 @@ export const teamData = [
     name: 'Mr. Vigneshwaran G',
     currentDesignation: ['M.Sc in Medical Genetics', 'University of Madras'],
     prevDesignation: ['B.Sc in Biotechnology', 'VISTAS, Vels University'],
-    email: 'm21resch01007 [at] iith.ac.in ',
+    email: 'bm21resch01007 [at] iith.ac.in ',
   },
   {
     img: 'https://res.cloudinary.com/dbmw0xoar/image/upload/v1671182752/ecell/MURL/Screenshot_from_2022-12-16_14-55-08_ol0gga.png',
