@@ -1,9 +1,9 @@
-"use client";
-import { motion } from "framer-motion";
-import { TypingText } from "../components";
+'use client';
+import { motion } from 'framer-motion';
+import { TypingText } from '../components';
 
-import styles from "../styles";
-import { fadeIn, staggerContainer } from "../utils/motion";
+import styles from '../styles';
+import { fadeIn, staggerContainer } from '../utils/motion';
 
 const About = () => (
   <section className={`${styles.paddings} relative z-10`}>
@@ -15,10 +15,10 @@ const About = () => (
       viewport={{ once: true, amount: 0.25 }}
       className={`${styles.innerWidth} mx-auto ${styles.flexCenter} flex-col my-2`}
     >
-      <TypingText title="| ABOUT MURL" textStyles="text-center" />
+      <TypingText title="| ABOUT" textStyles="text-center" />
 
       <motion.p
-        variants={fadeIn("up", "tween", 0.2, 1)}
+        variants={fadeIn('up', 'tween', 0.2, 1)}
         className="mt-[8px] font-normal sm:text-[25px] text-[16px] text-left text-secondary-white"
       >
         <span className="font-extrabold text-white">MURL</span> is focused on
@@ -30,7 +30,7 @@ const About = () => (
         clinic, leading to improved patient care.
       </motion.p>
       <motion.img
-        variants={fadeIn("up", "tween", 0.3, 1)}
+        variants={fadeIn('up', 'tween', 0.3, 1)}
         src="/arrow-down.svg"
         alt="arrow down"
         className="w-[18px] h-[28px] object-contain mt-[28px]"

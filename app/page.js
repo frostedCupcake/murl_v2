@@ -1,5 +1,5 @@
-import { Footer, Navbar } from "../components";
-import { About, GetStarted, Hero, Collaborators, Awards } from "../sections";
+import { About, GetStarted, Hero, Collaborators, Awards } from '../sections';
+import { Slider } from '../components';
 
 const Page = () => (
   <>
@@ -7,8 +7,9 @@ const Page = () => (
     <About />
     <GetStarted />
     <Awards />
+    {/* <Slider /> */}
     <Collaborators />
-    <div className="bg-primary-black h-[.8rem]"></div>
+    <div className="bg-primary-black h-[.8rem]" />
   </>
 );
 

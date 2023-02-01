@@ -3,5 +3,14 @@ import { TypingText, TitleText } from './CustomTexts';
 import Footer from './Footer';
 import TeamCard from './TeamCard';
 import PublicationCard from './PublicationCard';
+import Slider from './Slider';
 
-export { Navbar, TitleText, TypingText, Footer, TeamCard, PublicationCard };
+export {
+  Navbar,
+  TitleText,
+  TypingText,
+  Footer,
+  TeamCard,
+  PublicationCard,
+  Slider,
+};

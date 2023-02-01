@@ -1,5 +1,5 @@
-import { Navbar, Footer } from "../components";
-import "../styles/globals.css";
+import { Navbar, Footer } from '../components';
+import '../styles/globals.css';
 
 const RootLayout = ({ children }) => (
   <html lang="en">
